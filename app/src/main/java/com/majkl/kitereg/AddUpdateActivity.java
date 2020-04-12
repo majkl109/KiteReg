@@ -44,7 +44,7 @@ public class AddUpdateActivity extends AppCompatActivity {
         remarkTxt = findViewById(R.id.remarkTxt);
         saveBtn = findViewById(R.id.saveBtn);
 
-        //clicking to show image
+        //clicking to show image pic dialog
         profilePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,5 +59,11 @@ public class AddUpdateActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed(); // going back by clicking back button
+        return super.onSupportNavigateUp();
     }
 }
