@@ -31,5 +31,4 @@ public class Constants {
             + C_UPDATED_TIME_STAMP + " TEXT"
             + ")";
 }
-    //create database helper class that contains all crud methods
 
